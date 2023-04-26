@@ -12,7 +12,11 @@ const { typeDefs, resolvers } = require('./schemas');
 // Create a new instance of ApolloServer with the schema and resolvers
 const server = new ApolloServer({ 
   typeDefs,
-  resolvers
+  resolvers,
+  context: ({ req }) => {
+    const updatedReq = authMiddleware({ req });
+    return { user: updatedReq.user };
+  },
 });
 
 
