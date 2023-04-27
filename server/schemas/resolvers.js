@@ -21,7 +21,7 @@ const resolvers = {
     // },
 
     //change:the query should return the current user (from context) when no arguments are passed:
-    getSingleUser: async (parent, { id, username }, context) => {
+    me: async (parent, { id, username }, context) => {
       if (!id && !username && context.user) {
         return context.user;
       }
