@@ -8,7 +8,7 @@ The main purpose of this project was to refactor the code to implement a GraphQL
 
 ## Installation
 
-To install the application, you can visit the deployed version on Heroku: [Placeholder Link](https://your-heroku-app.herokuapp.com/)
+To install the application, you can visit the deployed version on Heroku: [Placeholder Link](https://graphqlrefactor.herokuapp.com/)
 
 ## Usage
 
